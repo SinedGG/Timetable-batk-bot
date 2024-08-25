@@ -4,10 +4,10 @@ on: workflow_dispatch
 
 env:
   SERVER_HOST: ${{ secrets.SERVER_IP }}
-  SERVER_USER: ubuntu
-  SERVER_PATH: /home/ubuntu/pm/batk-bot
+  SERVER_USER: root
+  SERVER_PATH: /var/pm2/apps/batk-bot
 
-  CONFIG_LOCATION: /home/ubuntu/config/batk-bot.config.js
+  CONFIG_LOCATION: /var/pm2/configs/batk-bot.config.js
 
 jobs:
   deploy:
